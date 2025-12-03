@@ -60,7 +60,7 @@ public class usuarioService {
 
         // C. Intentar enviar correo (con Rollback si falla)
         try {
-            String verificationLink = "http://3.236.98.190:8080/usuarios/verify?code=" + randomCode;
+            String verificationLink = "http://98.94.209.168:8080/usuarios/verify?code=" + randomCode;
 
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom("crusademanager.auth@gmail.com");
